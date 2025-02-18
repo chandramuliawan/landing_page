@@ -1,0 +1,188 @@
+/* css reset */
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0   ;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    line-height: 1.1;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 10%;
+    padding: 4px 8px;
+}
+
+/* css reset end*/
+
+/* global style */
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+
+
+    /* for testing and debugging */
+    /* background-color: aqua;
+    margin: 1px; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* color styles*/
+
+.header,
+.hero_section,
+.footer{
+    background-color: #1F2937;
+    color: #f9FAF8;
+}
+
+.header_logo_text{
+    font-size: 24px;
+}
+
+header{
+    font-size: 18px;
+}
+
+.hero_title{
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero_text{
+    font-size: 18px;
+}
+
+.info_section h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.quote_section{
+    background-color: #e5e7eb;
+}
+
+.quote_section :nth-child(1){
+    font-style: italic;
+}
+
+.quote_section :nth-child(2){
+    text-align: right;
+    font-weight: bold ;
+}
+
+.bottom_section{
+    background-color: #3882F6;
+    color:#f9FAF8;
+}
+
+.bottom_section .left :first-child {
+    font-weight: bold;
+}
+
+.bottom_section .sign_up{
+    border: solid #f9FAF8 1px;
+}
+
+
+.sign_up{
+    background-color: #3882F6;
+    color:#e5e7eb;
+}
+
+
+
+/*flexbox and alignment */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 32px;
+    gap: 16px;
+}
+
+.header .top{
+    display: flex;
+    gap: 16px;
+}
+
+.header_logo_text{
+    margin-right: auto;
+}
+ 
+.header .hero_section{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.info_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+}
+
+.info_section .info_cards {
+    display: flex;
+    gap: 16px;
+}
+
+.info_section .info_cards .card{
+    border: solid black 1px;
+
+    border-radius: 10px;;
+}
+
+.quote_section{
+    text-align: center;
+    padding: 128px;
+}
+
+.bottom_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px;
+    margin: 64px;
+    gap: 16px;
+    border-radius: 10px;
+
+}
+
+
+.footer{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+}
+
