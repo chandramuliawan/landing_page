@@ -27,8 +27,12 @@ button {
     line-height: 1.1;
     font-family: inherit;
     font-size: inherit;
-    border-radius: 10%;
-    padding: 4px 8px;
+    border-radius: 8px;
+    padding: 10px 24px;
+}
+
+button:active {
+    transform: translateY(2px);
 }
 
 /* css reset end*/
@@ -106,12 +110,15 @@ header{
 
 .bottom_section .sign_up{
     border: solid #f9FAF8 1px;
+
 }
 
 
 .sign_up{
     background-color: #3882F6;
     color:#e5e7eb;
+
+
 }
 
 
@@ -122,13 +129,21 @@ header{
     display: flex;
     flex-direction: column;
     
-    padding: 32px;
+    padding: 48px 64px;
     gap: 16px;
 }
 
 .header .top{
     display: flex;
+    align-items: center;
     gap: 16px;
+}
+
+.header_logo {
+    clip-path: circle(50%);
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
 }
 
 .header_logo_text{
@@ -138,26 +153,70 @@ header{
 .header .hero_section{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 16px;
 }
+
+.header .hero_section .right_panel {
+    border-radius: 16px;
+    border: solid #f9FAF8 8px;
+    max-width: 480px;
+    max-height: 320px;
+    overflow: hidden;
+}
+
+.header .hero_section .right_panel img {
+    margin: -300px 0 0 -150px;
+    /* padding:  8px; */
+ 
+}
+
 
 .info_section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px;
+    padding: 64px;
     gap: 16px;
 }
 
 .info_section .info_cards {
     display: flex;
+    flex-wrap:  wrap;
     gap: 16px;
 }
 
 .info_section .info_cards .card{
-    border: solid black 1px;
+    
+    width: 160px;
 
-    border-radius: 10px;;
+    text-align: center;
+
+
+    /* border-radius: 10px; 
+    border: solid black 1px; */
+}
+.info_section .info_cards .card img {
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+}
+
+.info_section .info_cards .card img[alt="info_card_pic_1"] {
+    object-fit: cover;
+}
+
+.info_section .info_cards .card img[alt="info_card_pic_2"] {
+    object-fit: contain;
+}
+
+.info_section .info_cards .card img[alt="info_card_pic_3"] {
+    object-fit: none;
+}
+
+.info_section .info_cards .card img[alt="info_card_pic_4"] {
+    object-fit: cover;
+    object-position: 0% 100%;
 }
 
 .quote_section{
@@ -170,7 +229,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 64px;
-    margin: 64px;
+    margin: 128px;
     gap: 16px;
     border-radius: 10px;
 
@@ -182,7 +241,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px;
+    padding: 64px;
     gap: 16px;
 }
 
